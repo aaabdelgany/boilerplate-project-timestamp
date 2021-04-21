@@ -54,7 +54,7 @@ app.get("/api/", (req,res)=>{
 })
 
 // listen for requests :)
-const port = 3001 || process.env.PORT
+const port = process.env.PORT || 3001
 var listener = app.listen(port, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
